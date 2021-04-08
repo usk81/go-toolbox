@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
+	"github.com/usk81/go-toolbox/id/commands/rename"
 	"github.com/usk81/go-toolbox/shared/cli"
 )
 
@@ -17,6 +18,10 @@ var (
 	}
 	runTimes int
 )
+
+func init() {
+	RootCmd.AddCommand(rename.RootCmd)
+}
 
 // Run runs CLI action
 func Run() {
