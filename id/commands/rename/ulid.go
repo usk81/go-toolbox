@@ -15,7 +15,7 @@ import (
 
 var (
 	ulidCmd = &cobra.Command{
-		Use:   "uuid",
+		Use:   "ulid",
 		Short: "rename files to ULID format",
 		Long:  "rename files to ULID format",
 		Run:   ulidCommand,
